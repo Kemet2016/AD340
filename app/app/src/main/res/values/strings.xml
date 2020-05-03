@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="greeting">Hello AD340!</string>
+    <string name="name">by Ahmed Moussa</string>
+</resources>
