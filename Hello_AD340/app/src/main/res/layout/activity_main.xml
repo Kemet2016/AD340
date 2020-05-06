@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginTop150"
+                android:text="@string/title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/TextSize20"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="@dimen/imageWidth"
+                android:layout_height="@dimen/imageHeight"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTop10"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:contentDescription="@string/image_description" />
+
+            <EditText
+                android:id="@+id/ZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="@dimen/marginTop20"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/field_shape"
+                android:backgroundTint="@color/white"
+                android:bottomLeftRadius="@dimen/radius"
+                android:bottomRightRadius="@dimen/radius"
+                android:hint="@string/hint"
+                android:inputType="number"
+                android:padding="@dimen/padding15"
+                android:textColor="@color/TextColor"
+                android:textColorHint="@color/colorAccent"
+                android:topLeftRadius="@dimen/radius"
+                android:topRightRadius="@dimen/radius"
+                app:layout_constraintTop_toBottomOf="@+id/Title"
+                android:autofillHints="false" />
+
+            <Button
+                android:id="@+id/Enter"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_left40"
+                android:layout_marginTop="@dimen/marginTop30"
+                android:layout_marginEnd="@dimen/margin_right40"
+                android:background="@drawable/btn_bg"
+                android:text="@string/button_text"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/TextSize20"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/ZipCode"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
