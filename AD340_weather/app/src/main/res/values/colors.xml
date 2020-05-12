@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3a6186</color>
+    <color name="colorPrimaryDark">#005aa7</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="DarkBackground">#005aa7</color>
+    <color name="white_color">#ffffff</color>
+    <color name="field_color">#1affffff</color>
+    <color name="lightBackGround">#fffde4</color>
+    <color name="btn_bg">#12c2e9</color>
+    <color name="black">#000000</color>
+    <color name="forecast_item_color">#EFE9E9</color>
+
+</resources>
