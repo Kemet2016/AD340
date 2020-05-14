@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/TextSize30"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/ic_location_on_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/image_description"
+        app:layout_constraintBottom_toTopOf="@+id/Title"
+        />
+
+    <EditText
+        android:id="@+id/ZipCode"
+        android:layout_width="346dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white_color"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/TextSize15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        android:autofillHints="false" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="154dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/button_text"
+        android:textColor="@color/white_color"
+        app:layout_constraintEnd_toEndOf="@+id/ZipCode"
+        app:layout_constraintTop_toBottomOf="@+id/ZipCode"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forecastList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_start16"
+        android:layout_marginTop="@dimen/margin_start16"
+        android:layout_marginEnd="@dimen/margin_start16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
