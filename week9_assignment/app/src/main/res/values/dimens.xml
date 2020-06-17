@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TextSize15">15sp</dimen>
+    <dimen name="TextSize18">18sp</dimen>
+    <dimen name="TextSize20">20sp</dimen>
+    <dimen name="TextSize25">25sp</dimen>
+    <dimen name="TextSize30">30sp</dimen>
+    <dimen name="TextSize35">35sp</dimen>
+    <dimen name="radius">15dp</dimen>
+    <dimen name="marginTop10">10dp</dimen>
+    <dimen name="marginTop20">20dp</dimen>
+    <dimen name="image_width">40dp</dimen>
+    <dimen name="image_height">40dp</dimen>
+    <dimen name="margin_start16">16dp</dimen>
+    <dimen name="margin_start24">24dp</dimen>
+</resources>
